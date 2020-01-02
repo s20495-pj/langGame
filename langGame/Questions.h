@@ -21,5 +21,4 @@ public:
     Questions(string question, string answerOne, string answerTwo, string answerThree);
 };
 
-
 #endif //LANGGAME_QUESTIONS_H

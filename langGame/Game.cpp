@@ -60,7 +60,6 @@ void Game::prepareRoundFour() {
             getline(fileRoundFour, answerTwo);
             getline(fileRoundFour, answerThree);
             fourthRoundSentences.push_back(Questions(question, answerOne, answerTwo, answerThree));
-            //   myArrayRoundFour[i];
         }
     }
 }
@@ -76,63 +75,6 @@ void Game::prepareRoundFive() {
     }
     fileRoundFive.close();
 }
-
-void Game::playGame() {
-
-    Game::readRules();
-
-    switch (scorer.getPoints()) {
-        case 0:
-            Game::prepareRoundOneAndTwo();
-            while (scorer.getPoints() < 11 && scorer.getMinusPoints() < 11) {
-                if (scorer.getMinusPoints() == 10) {
-                    cout << finishInformation << scorer.getPoints();
-                    break;
-                }
-                Game::roundOne();
-            }
-        case 10:
-            Game::prepareRoundOneAndTwo();
-            while (scorer.getPoints() < 21 && scorer.getMinusPoints() < 11) {
-                if (scorer.getMinusPoints() == 10) {
-                    cout << finishInformation << scorer.getPoints();
-                    break;
-                }
-                Game::roundTwo();
-            }
-        case 20:
-            Game::prepareRoundThree();
-            while (scorer.getPoints() < 31 && scorer.getMinusPoints() < 11) {
-                if (scorer.getMinusPoints() == 101) {
-                    cout << finishInformation << scorer.getPoints();
-                    break;
-                }
-                Game::roundThree();
-            }
-        case 30:
-            Game::prepareRoundFour();
-            while (scorer.getPoints() < 41 && scorer.getMinusPoints() < 11) {
-                if (scorer.getMinusPoints() == 10) {
-                    cout << finishInformation << scorer.getPoints();
-                    break;
-                }
-                Game::roundFour();
-            }
-        case 40:
-            Game::prepareRoundFive();
-            while (scorer.getPoints() < 51 && scorer.getMinusPoints() < 11) {
-                if (scorer.getMinusPoints() == 10) {
-                    cout << finishInformation << scorer.getPoints();
-                    break;
-                }
-                if (scorer.getPoints() == 50) {
-                    cout << "Gratulacje, udalo Ci sie ukonczyc gre! ";
-                }
-                Game::roundFive();
-            }
-    }
-}
-
 
 void Game::roundOne() {
     srand(time(0));
@@ -272,5 +214,55 @@ void Game::roundFive() {
         } else {
             scorer.oddPoints();
         }
+    }
+}
+
+void Game::playGame() {
+
+    Game::readRules();
+
+    Game::prepareRoundOneAndTwo();
+    while (scorer.getPoints() < 11 && scorer.getMinusPoints() < 11) {
+        if (scorer.getMinusPoints() == 10) {
+            cout << finishInformation << scorer.getPoints();
+            break;
+        }
+        Game::roundOne();
+    }
+    Game::prepareRoundOneAndTwo();
+    while (scorer.getPoints() < 21 && scorer.getMinusPoints() < 11) {
+        if (scorer.getMinusPoints() == 10) {
+            cout << finishInformation << scorer.getPoints();
+            break;
+        }
+        Game::roundTwo();
+    }
+    Game::prepareRoundThree();
+    while (scorer.getPoints() < 31 && scorer.getMinusPoints() < 11) {
+        if (scorer.getMinusPoints() == 10) {
+            cout << finishInformation << scorer.getPoints();
+            break;
+        }
+        Game::roundThree();
+    }
+    Game::prepareRoundFour();
+    while (scorer.getPoints() < 41 && scorer.getMinusPoints() < 11) {
+        if (scorer.getMinusPoints() == 10) {
+            cout << finishInformation << scorer.getPoints();
+            break;
+        }
+        Game::roundFour();
+    }
+    Game::prepareRoundFive();
+    while (scorer.getPoints() < 51 && scorer.getMinusPoints() < 11) {
+        if (scorer.getMinusPoints() == 10) {
+            cout << finishInformation << scorer.getPoints();
+            break;
+        }
+        if (scorer.getPoints() == 50) {
+            cout << "Gratulacje, udalo Ci sie ukonczyc gre! ";
+            break;
+        }
+        Game::roundFive();
     }
 }
