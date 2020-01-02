@@ -63,7 +63,7 @@ void Game::prepareRoundFour() {
             getline(fileRoundFour, answerTwo);
             getline(fileRoundFour, answerThree);
             fourthRoundSentences.push_back(Questions(question, answerOne, answerTwo, answerThree));
-         //   myArrayRoundFour[i];
+            //   myArrayRoundFour[i];
         }
     }
 }
@@ -112,17 +112,30 @@ void Game::playGame() {
 //                }
 //                Game::roundThree();
 //            }
+//        case 30:
+//            Game::prepareRoundFour();
+//            while (scorer.getPoints() < 41 && scorer.getMinusPoints() < 11) {
+//                if (scorer.getMinusPoints() == 10) {
+//                    cout << finishInformation << scorer.getPoints();
+//                    break;
+//                }
+//                Game::roundFour();
+//            }
         case 0:
-            Game::prepareRoundFour();
-            while (scorer.getPoints() < 41 && scorer.getMinusPoints() < 11) {
-                if (scorer.getMinusPoints() == 101) {
+            Game::prepareRoundFive();
+            while (scorer.getPoints() < 51 && scorer.getMinusPoints() < 131) {
+                if (scorer.getMinusPoints() == 103) {
                     cout << finishInformation << scorer.getPoints();
                     break;
                 }
-                Game::roundFour();
+                if (scorer.getPoints() == 60) {
+                    cout << "Gratulacje, udalo Ci sie ukonczyc gre! ";
+                }
+                Game::roundFive();
             }
     }
 }
+
 
 void Game::roundOne() {
     srand(time(0));
@@ -209,7 +222,7 @@ void Game::roundThree() {
 void Game::roundFour() {
     srand(time(0));
     random = rand() % fourthRoundSentences.size();
-    
+
     Questions chosenQuestion(question, answerOne, answerTwo, answerThree);
     chosenQuestion = fourthRoundSentences[random];
 
@@ -230,12 +243,38 @@ void Game::roundFour() {
 
     cin >> typeWord;
 
-    if (typeWord ==  chosenQuestion.answerOne) {
+    if (typeWord == chosenQuestion.answerOne) {
         scorer.addPoints();
     } else {
         scorer.oddPoints();
         cout << "\n poprawny wyraz to : " << answerOne;
     }
-
 }
 
+void Game::roundFive() {
+    srand(time(0));
+    random = (rand() % 40) + 1;
+
+    word = myArrayRoundFive[random];
+    translationWord = myArrayRoundFive[random];
+
+    if (random % 2 == 0) {
+        cout << "\nWrite opposite word below   " << '\n' << word << endl;
+        cin >> typeWord;
+
+        if (typeWord == myArrayRoundFive[++random]) {
+            scorer.addPoints();
+        } else {
+            scorer.oddPoints();
+        }
+    } else if (random % 2 == 1 || random == 40) {
+
+        cout << "\nWrite opposite word below   " << '\n' << word << endl;
+        cin >> typeWord;
+        if (typeWord == myArrayRoundFive[--random]) {
+            scorer.addPoints();
+        } else {
+            scorer.oddPoints();
+        }
+    }
+}

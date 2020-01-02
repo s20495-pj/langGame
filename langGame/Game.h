@@ -15,7 +15,6 @@ class Game {
 
 public:
     string myArrayRoundOneAndTwo[40];
-   // string myArrayRoundFour[30];
     string myArrayRoundFive[40];
     string line;
     string rules;
@@ -32,6 +31,8 @@ public:
     string wholeSentenceLine;
     string delimiter;
 
+    string word;
+    string translationWord;
 
     vector<Questions> fourthRoundSentences;
     vector<string> thirdRoundSentences;
@@ -54,7 +55,7 @@ public:
     void roundTwo();
     void roundThree();
     void roundFour();
-//    void roundFive();
+    void roundFive();
 
 };
 

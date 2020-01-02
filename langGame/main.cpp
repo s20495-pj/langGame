@@ -1,12 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <random>
-#include <string>
-#include <cassert>
-#include <ctime>
-#include <vector>
-#include <list>
-#include <algorithm>
+
 #include "Scorer.h"
 #include "Game.h"
 
@@ -24,4 +16,6 @@ int main() {
   //   game.prepareRoundFour();
    //  game.prepareRoundFive();
         game.playGame();
+
+
 }
