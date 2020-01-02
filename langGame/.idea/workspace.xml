@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="POSTPONE_SUITABLE_CONFIGURATIONS_SEARCH" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+    <option name="showStatusBarWidget" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="langGame" targetName="langGame" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3b1f4e1-93b0-4a9a-bcd5-2eb8efa27b0a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="whRNxKbF" />
+  </component>
+  <component name="ProjectId" id="1VQ688UDhSfLuykSfchnSNPVGcb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration name="langGame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="langGame" TARGET_NAME="langGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="langGame" RUN_TARGET_NAME="langGame">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3b1f4e1-93b0-4a9a-bcd5-2eb8efa27b0a" name="Default Changelist" comment="" />
+      <created>1577172809701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577172809701</updated>
+      <workItem from="1577172813705" duration="613000" />
+      <workItem from="1577530174474" duration="76733000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="187" width="800" height="684" key="#Intentions" timestamp="1577630619643">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="555" y="187" width="800" height="684" key="#Intentions/0.27.1920.997@0.27.1920.997" timestamp="1577630619643" />
+    <state x="722" y="244" width="475" height="604" key="#com.intellij.ide.util.MemberChooser" timestamp="1577968080207">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="722" y="244" width="475" height="604" key="#com.intellij.ide.util.MemberChooser/0.27.1920.997@0.27.1920.997" timestamp="1577968080207" />
+    <state x="693" y="274" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577658548832">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="693" y="274" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.997@0.27.1920.997" timestamp="1577658548832" />
+    <state x="718" y="229" key="#xdebugger.evaluate" timestamp="1577800071758">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="718" y="229" key="#xdebugger.evaluate/0.27.1920.997@0.27.1920.997" timestamp="1577800071758" />
+    <state width="491" height="466" key="DebuggerActiveHint" timestamp="1577968042064">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state width="491" height="466" key="DebuggerActiveHint/0.27.1920.997@0.27.1920.997" timestamp="1577968042064" />
+    <state width="1874" height="252" key="GridCell.Tab.0.bottom" timestamp="1577974845306">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state width="1874" height="252" key="GridCell.Tab.0.bottom/0.27.1920.997@0.27.1920.997" timestamp="1577974845306" />
+    <state width="1874" height="252" key="GridCell.Tab.0.center" timestamp="1577974845305">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state width="1874" height="252" key="GridCell.Tab.0.center/0.27.1920.997@0.27.1920.997" timestamp="1577974845305" />
+    <state width="1874" height="252" key="GridCell.Tab.0.left" timestamp="1577974845304">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state width="1874" height="252" key="GridCell.Tab.0.left/0.27.1920.997@0.27.1920.997" timestamp="1577974845304" />
+    <state width="1874" height="252" key="GridCell.Tab.0.right" timestamp="1577974845306">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state width="1874" height="252" key="GridCell.Tab.0.right/0.27.1920.997@0.27.1920.997" timestamp="1577974845306" />
+    <state width="1874" height="252" key="GridCell.Tab.1.bottom" timestamp="1577974845308">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state width="1874" height="252" key="GridCell.Tab.1.bottom/0.27.1920.997@0.27.1920.997" timestamp="1577974845308" />
+    <state width="1874" height="252" key="GridCell.Tab.1.center" timestamp="1577974845307">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state width="1874" height="252" key="GridCell.Tab.1.center/0.27.1920.997@0.27.1920.997" timestamp="1577974845307" />
+    <state width="1874" height="252" key="GridCell.Tab.1.left" timestamp="1577974845306">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state width="1874" height="252" key="GridCell.Tab.1.left/0.27.1920.997@0.27.1920.997" timestamp="1577974845306" />
+    <state width="1874" height="252" key="GridCell.Tab.1.right" timestamp="1577974845307">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state width="1874" height="252" key="GridCell.Tab.1.right/0.27.1920.997@0.27.1920.997" timestamp="1577974845307" />
+    <state x="449" y="160" width="1022" height="737" key="SettingsEditor" timestamp="1577717022954">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="449" y="160" width="1022" height="737" key="SettingsEditor/0.27.1920.997@0.27.1920.997" timestamp="1577717022954" />
+    <state x="100" y="127" width="1710" height="804" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577798603518">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="100" y="127" width="1710" height="804" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.997@0.27.1920.997" timestamp="1577798603518" />
+    <state x="616" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1577530185821">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="616" y="353" key="com.intellij.ide.util.TipDialog/0.27.1920.997@0.27.1920.997" timestamp="1577530185821" />
+    <state x="704" y="169" width="501" height="720" key="refactoring.ChangeSignatureDialog" timestamp="1577968174989">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="704" y="169" width="501" height="720" key="refactoring.ChangeSignatureDialog/0.27.1920.997@0.27.1920.997" timestamp="1577968174989" />
+    <state x="623" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1577798852500">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="623" y="245" width="672" height="678" key="search.everywhere.popup/0.27.1920.997@0.27.1920.997" timestamp="1577798852500" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Scorer.h</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Game.cpp</url>
+          <line>76</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Game.cpp</url>
+          <line>213</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Game.cpp</url>
+          <line>222</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

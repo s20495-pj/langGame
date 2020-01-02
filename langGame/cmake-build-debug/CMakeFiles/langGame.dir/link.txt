@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/langGame.dir/main.cpp.o CMakeFiles/langGame.dir/Questions.cpp.o CMakeFiles/langGame.dir/Scorer.cpp.o CMakeFiles/langGame.dir/Game.cpp.o  -o langGame 

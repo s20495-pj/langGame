@@ -1,0 +1,232 @@
+ string STRING;
+    ifstream infile;
+    infile.open("/home/michal/CLionProjects/langGame/rules.txt");
+
+    while (!infile.eof()) // To get you all the lines.
+    {
+        getline(infile, STRING);
+        cout << STRING << "\n";
+    }
+    infile.close();
+    // system ("pause");
+
+    string myArray[38];
+    string typeWord;
+    vector<string> fourthRoundSentences;
+
+    vector<string> thirdRoundSentences;
+
+    int random = 0;
+
+    cout << "\n Let's play the game. \n";
+
+    ifstream file("/home/michal/CLionProjects/langGame/roundOneAndTwo.txt");   //zmienić na ścieżkę względą  "names.txt"
+    if (file.is_open()) {
+
+        for (int i = 0; i < 38; ++i) {
+            file >> myArray[i];
+        }
+    }
+
+    string line;
+
+    ifstream fileRoundThree("/home/michal/CLionProjects/langGame/roundThree.txt");
+    while (getline(fileRoundThree, line)) {
+        thirdRoundSentences.push_back(line);
+    }
+
+    ifstream fileRoundFour("/home/michal/CLionProjects/langGame/roundFour.txt");
+    while (getline(fileRoundFour, line)) {
+        fourthRoundSentences.push_back(line);
+    }
+
+
+    switch (scorer.getPoints()) {
+        case 0:
+            while (scorer.getPoints() < 11 && scorer.getMinusPoints() < 11) {
+                if (scorer.getMinusPoints() == 10) {
+                    cout << finishInformation;
+                    break;
+                }
+
+                srand(time(0));
+                random = rand() % 38;
+                string word = myArray[random];
+
+                --random;
+
+                string translationWord = myArray[random];
+
+                if (random % 2 == 1) {
+                    random++;
+                } else if (random % 2 == 0) {
+
+                    cout << "\n Write translation of word below " << '\n' << word;
+
+                    cin >> typeWord;
+
+                    if (typeWord == translationWord) {
+
+                        scorer.addPoints();
+                        cout << goodAnswer << scorer.getPoints();
+
+                    } else {
+                        scorer.oddPoints();
+                        cout << badAnswer << scorer.getMinusPoints();
+                    }
+                }
+            }
+//        case 10:
+//            while (scorer.getPoints() < 21 && scorer.getMinusPoints() < 11) {
+//                if (scorer.getMinusPoints() == 10) {
+//                    break;
+//                }
+//
+//                srand(time(0));
+//                random = rand() % 38;
+//                string word = myArray[random];
+//
+//                ++random;
+//
+//                string translationWord = myArray[random];
+//
+//                if (random % 2 == 0) {
+//                    random--;
+//                } else if (random % 2 == 1) {
+//
+//                    cout << "Write translation of word below " << '\n' << word;
+//
+//                    cin >> typeWord;
+//
+//                    if (typeWord == translationWord) {
+//
+//                        scorer.addPoints();
+//                        cout << goodAnswer << scorer.getPoints();
+//
+//                    } else {
+//                        scorer.oddPoints();
+//                        cout << badAnswer << scorer.getMinusPoints();
+//                    }
+//                }
+//            }
+
+//        case 20:
+//            while (scorer.getPoints() < 31 && scorer.getMinusPoints() < 11) {
+//                if (scorer.getMinusPoints() == 10) {
+//                    break;
+//                }
+//                srand(time(0));
+//                random = rand() % thirdRoundSentences.size();
+//
+//                string choosenLine = thirdRoundSentences[random];
+//                cout << choosenLine << "\n";
+//
+//                std::string delimiter = " ";
+//
+//                size_t pos = 0; //sizeOf
+//                string token;
+//                vector<string> arrayWithOneLineStrings;
+//                while ((pos = choosenLine.find(delimiter)) !=
+//                       std::string::npos) { //npos = no position (no spaces in this case)
+//                    token = choosenLine.substr(0, pos);
+//
+//                    choosenLine.erase(0, pos + delimiter.length());
+//                    arrayWithOneLineStrings.push_back(token);
+//                }
+//                arrayWithOneLineStrings.push_back(choosenLine);
+//                cout << "number of spaces  " << arrayWithOneLineStrings.size();
+//
+//                srand(time(0));
+//                random = rand() % arrayWithOneLineStrings.size();
+//
+//                cout << "\n" << arrayWithOneLineStrings[random] << endl;
+//
+//                cin >> typeWord;
+//
+//                if (typeWord == token) {
+//
+//                    scorer.addPoints();
+//                    cout << goodAnswer << scorer.getPoints();
+//
+//                } else {
+//                    scorer.oddPoints();
+//                    cout << "\n poprawny wyraz to : " << token;
+//                    cout << badAnswer << scorer.getMinusPoints();
+//                }
+//
+//            }
+//    }
+
+
+//        case 0:
+////        while (points < 41 && minusPoints < 11) {
+////            if (minusPoints == 10) {
+////                break;
+////            }
+//            string sentence;
+//            string answerOne;
+//            string answerTwo;
+//            string answerThree;
+//            vector<string> zdania;
+//            string tab[3];
+//
+//
+//            for (int i = 1; i < 121; i = i + 4) {
+//                sentence = fourthRoundSentences[i - 1];
+//
+//                answerOne = fourthRoundSentences[i];
+//                answerTwo = fourthRoundSentences[i + 1];
+//                answerThree = fourthRoundSentences[i + 2];
+//
+//                tab[0] = answerOne;
+//                tab[1] = answerThree;
+//                tab[2] = answerTwo;
+//
+//                zdania.push_back(sentence);
+//                cout << "\n" << sentence;
+//                cout << "\n" << answerThree << " " << answerOne << " " << answerTwo << " " << endl;
+//
+//                cout << answerOne;
+//
+//
+//            }
+
+    }
+
+//    class Pytanie {
+//
+//
+//        string odp1;
+//        string odp2;
+//        string odp3;
+//        int poprOdp;
+//        string pytanie;
+//
+//        Pytanie(string pytanie, string odp1, string odp2, string odp3, int poprOdp);
+//
+
+
+
+
+//    };
+//
+//
+//
+//    //   Pytanie pytanie1 = new Pytanie();
+//    list<Pytanie> listka;
+//    //  list<struct Pytanie> *lista = new list<Pytanie>();
+//    //  lista->push_back(pytanie1);
+//
+
+
+
+
+
+
+
+//
+//    case 50:
+//    }
+
+//}
+}

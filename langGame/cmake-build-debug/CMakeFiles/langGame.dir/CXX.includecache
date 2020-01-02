@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/michal/CLionProjects/langGame/Game.cpp
+iostream
+-
+Game.h
+/home/michal/CLionProjects/langGame/Game.h
+fstream
+-
+random
+-
+string
+-
+cassert
+-
+ctime
+-
+utility
+-
+vector
+-
+list
+-
+algorithm
+-
+
+/home/michal/CLionProjects/langGame/Game.h
+vector
+-
+Questions.h
+/home/michal/CLionProjects/langGame/Questions.h
+Scorer.h
+/home/michal/CLionProjects/langGame/Scorer.h
+
+/home/michal/CLionProjects/langGame/Questions.h
+string
+-
+
+/home/michal/CLionProjects/langGame/Scorer.h
+

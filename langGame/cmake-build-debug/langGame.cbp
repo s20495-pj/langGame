@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="langGame"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/michal/CLionProjects/langGame/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/michal/CLionProjects/langGame/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="langGame">
+				<Option output="/home/michal/CLionProjects/langGame/cmake-build-debug/langGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/CLionProjects/langGame/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 langGame"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="langGame/fast">
+				<Option output="/home/michal/CLionProjects/langGame/cmake-build-debug/langGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/CLionProjects/langGame/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 langGame/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/michal/CLionProjects/langGame/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/michal/CLionProjects/langGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/michal/CLionProjects/langGame/Game.cpp">
+			<Option target="langGame"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/langGame/Game.h">
+			<Option target="langGame"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/langGame/Questions.cpp">
+			<Option target="langGame"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/langGame/Questions.h">
+			<Option target="langGame"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/langGame/Scorer.cpp">
+			<Option target="langGame"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/langGame/Scorer.h">
+			<Option target="langGame"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/langGame/main.cpp">
+			<Option target="langGame"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/langGame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
