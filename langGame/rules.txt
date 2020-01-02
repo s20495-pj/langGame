@@ -3,7 +3,7 @@ W tej grze uczymy sie slowek z jezyka angielskiego w formie gry.
 Gra sklada sie z 5 roznych rund z nastepującymi zasadami:
 
 Kazda prawidlowa odpowiedz jest punktowana.
-Gre konczymy w momencie gdy uzyskamy 50 punktow.
+Gre konczymy w momencie gdy uzyskamy 60 punktow.
 Lub wpiszemy niepoprawnie 10 odpowiedzi w ciagu calej gry.
 
 Pamietaj by nie uzywac polskich znakow.

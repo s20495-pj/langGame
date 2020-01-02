@@ -5,11 +5,8 @@
 #include <iostream>
 #include "Game.h"
 #include <fstream>
-#include <random>
 #include <string>
-#include <cassert>
 #include <ctime>
-#include <utility>
 #include <vector>
 #include <list>
 #include <algorithm>
@@ -85,50 +82,50 @@ void Game::playGame() {
     Game::readRules();
 
     switch (scorer.getPoints()) {
-//        case 0:
-//            Game::prepareRoundOneAndTwo();
-//            while (scorer.getPoints() < 11 && scorer.getMinusPoints() < 11) {
-//                if (scorer.getMinusPoints() == 10) {
-//                    cout << finishInformation << scorer.getPoints();
-//                    break;
-//                }
-//                Game::roundOne();
-//            }
-//        case 10:
-//            Game::prepareRoundOneAndTwo();
-//            while (scorer.getPoints() < 21 && scorer.getMinusPoints() < 11) {
-//                if (scorer.getMinusPoints() == 10) {
-//                    cout << finishInformation << scorer.getPoints();
-//                    break;
-//                }
-//                Game::roundTwo();
-//            }
-//        case 20:
-//            Game::prepareRoundThree();
-//            while (scorer.getPoints() < 31 && scorer.getMinusPoints() < 11) {
-//                if (scorer.getMinusPoints() == 101) {
-//                    cout << finishInformation << scorer.getPoints();
-//                    break;
-//                }
-//                Game::roundThree();
-//            }
-//        case 30:
-//            Game::prepareRoundFour();
-//            while (scorer.getPoints() < 41 && scorer.getMinusPoints() < 11) {
-//                if (scorer.getMinusPoints() == 10) {
-//                    cout << finishInformation << scorer.getPoints();
-//                    break;
-//                }
-//                Game::roundFour();
-//            }
         case 0:
-            Game::prepareRoundFive();
-            while (scorer.getPoints() < 51 && scorer.getMinusPoints() < 131) {
-                if (scorer.getMinusPoints() == 103) {
+            Game::prepareRoundOneAndTwo();
+            while (scorer.getPoints() < 11 && scorer.getMinusPoints() < 11) {
+                if (scorer.getMinusPoints() == 10) {
                     cout << finishInformation << scorer.getPoints();
                     break;
                 }
-                if (scorer.getPoints() == 60) {
+                Game::roundOne();
+            }
+        case 10:
+            Game::prepareRoundOneAndTwo();
+            while (scorer.getPoints() < 21 && scorer.getMinusPoints() < 11) {
+                if (scorer.getMinusPoints() == 10) {
+                    cout << finishInformation << scorer.getPoints();
+                    break;
+                }
+                Game::roundTwo();
+            }
+        case 20:
+            Game::prepareRoundThree();
+            while (scorer.getPoints() < 31 && scorer.getMinusPoints() < 11) {
+                if (scorer.getMinusPoints() == 101) {
+                    cout << finishInformation << scorer.getPoints();
+                    break;
+                }
+                Game::roundThree();
+            }
+        case 30:
+            Game::prepareRoundFour();
+            while (scorer.getPoints() < 41 && scorer.getMinusPoints() < 11) {
+                if (scorer.getMinusPoints() == 10) {
+                    cout << finishInformation << scorer.getPoints();
+                    break;
+                }
+                Game::roundFour();
+            }
+        case 40:
+            Game::prepareRoundFive();
+            while (scorer.getPoints() < 51 && scorer.getMinusPoints() < 11) {
+                if (scorer.getMinusPoints() == 10) {
+                    cout << finishInformation << scorer.getPoints();
+                    break;
+                }
+                if (scorer.getPoints() == 50) {
                     cout << "Gratulacje, udalo Ci sie ukonczyc gre! ";
                 }
                 Game::roundFive();
@@ -140,9 +137,9 @@ void Game::playGame() {
 void Game::roundOne() {
     srand(time(0));
     random = (rand() % 40) + 1;
-    string word = myArrayRoundOneAndTwo[random];
+    word = myArrayRoundOneAndTwo[random];
     --random;
-    string translationWord = myArrayRoundOneAndTwo[random];
+    translationWord = myArrayRoundOneAndTwo[random];
     if (random % 2 == 1) {
         random++;
     } else if (random % 2 == 0) {
@@ -161,9 +158,9 @@ void Game::roundTwo() {
     srand(time(0)
     );
     random = (rand() % 40) + 1;
-    string word = myArrayRoundOneAndTwo[random];
+    word = myArrayRoundOneAndTwo[random];
     ++random;
-    string translationWord = myArrayRoundOneAndTwo[random];
+    translationWord = myArrayRoundOneAndTwo[random];
 
     if (random % 2 == 0) {
         random--;
@@ -231,7 +228,6 @@ void Game::roundFour() {
     answers.push_back(chosenQuestion.answerThree);
 
     random_shuffle(answers.begin(), answers.end());
-
 
     cout << "\n" << chosenQuestion.question << "\n";
 

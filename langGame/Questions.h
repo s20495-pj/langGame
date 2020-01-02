@@ -19,9 +19,6 @@ public:
     string answerThree;
 
     Questions(string question, string answerOne, string answerTwo, string answerThree);
-    Questions();
-
-  //  Questions(const string &question, const string &answerOne, const string &answerTwo, const string &answerThree);
 };
 
 

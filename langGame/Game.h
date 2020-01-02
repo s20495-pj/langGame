@@ -40,7 +40,6 @@ public:
     vector<string> answers;
 
     Scorer scorer;
-    Questions questions;
 
     int random;
 
@@ -56,8 +55,6 @@ public:
     void roundThree();
     void roundFour();
     void roundFive();
-
 };
-
 
 #endif //LANGGAME_GAME_H
