@@ -13,17 +13,17 @@
 
 using namespace std;
 
-string finishInformation = "\n Koniec gry, wykorzystales wszystkie skuchy. Twoj wynik to : ";
+string finishInformation = "\n Game over. Try again later. Your final score is : ";
 
 void Game::readRules() {
 
-    ifstream file("/home/michal/CLionProjects/langGame/rules.txt");
+    ifstream fileRules("/home/michal/CLionProjects/langGame/rules.txt");
 
-    while (!file.eof()) { // To get you all the lines.
-        getline(file, rules);
+    while (!fileRules.eof()) { // To get you all the lines.
+        getline(fileRules, rules);
         cout << rules << "\n";
     }
-    file.close();
+    fileRules.close();
     cout << "\n Let's play the game. \n";
 }
 
@@ -62,6 +62,7 @@ void Game::prepareRoundFour() {
             fourthRoundSentences.push_back(Questions(question, answerOne, answerTwo, answerThree));
         }
     }
+    fileRoundFour.close();
 }
 
 void Game::prepareRoundFive() {
@@ -78,7 +79,7 @@ void Game::prepareRoundFive() {
 
 void Game::roundOne() {
 
-    if (!preparedRoundOne) {
+    if (!preparedRoundOneAndTwo) {
         prepareRoundOneAndTwo();
     }
     srand(time(0));
@@ -89,7 +90,7 @@ void Game::roundOne() {
     if (random % 2 == 1) {
         random++;
     } else if (random % 2 == 0) {
-        cout << "\n Write translation of word below " << '\n' << word << endl;
+        cout << "\n Write translation of word below:  " << '\n' << word<< "\n";
 
         cin >> typeWord;
         if (typeWord == translationWord) {
@@ -112,7 +113,7 @@ void Game::roundTwo() {
         random--;
     } else if (random % 2 == 1) {
 
-        cout << "\nWrite translation of word below " << '\n' << word << endl;
+        cout << "\nWrite translation of word below:  " << '\n' << word << "\n";
         cin >> typeWord;
 
         if (typeWord == translationWord) {
@@ -152,8 +153,7 @@ void Game::roundThree() {
         chosenLine.replace(chosenLine.find(token), token.size(), "....");
     }
 
-    cout << "\n" << chosenLine << endl;
-    cout << "\n" << token << endl;
+    cout << "\n" << chosenLine<< "\n";
     cin >> typeWord;
     arrayWithOneLineStrings.clear(); //clear array after answer, avoid adding more than one sentence to vector
 
@@ -161,7 +161,7 @@ void Game::roundThree() {
         scorer.addPoints();
     } else {
         scorer.oddPoints();
-        cout << "\n poprawny wyraz to : " << token;
+        cout << "\n Right answer is  : " << token<< "\n";
     }
 }
 
@@ -195,7 +195,7 @@ void Game::roundFour() {
         scorer.addPoints();
     } else {
         scorer.oddPoints();
-        cout << "\n poprawny wyraz to : " << answerOne;
+        cout << "\n Right answer is  : " << answerOne<< "\n";
     }
 }
 
@@ -237,7 +237,7 @@ void Game::playGame() {
     while (true) {
 
         if (scorer.getPoints() == 50) {
-            cout << "Gratulacje, udalo Ci sie ukonczyc gre! " << endl;
+            cout << "\nCongratulations! You finished the game  " << endl;
             return;
         }
         if (scorer.getMinusPoints() == 10) {

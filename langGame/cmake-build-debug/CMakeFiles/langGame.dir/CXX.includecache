@@ -13,15 +13,9 @@ Game.h
 /home/michal/CLionProjects/langGame/Game.h
 fstream
 -
-random
--
 string
 -
-cassert
--
 ctime
--
-utility
 -
 vector
 -
@@ -43,4 +37,8 @@ string
 -
 
 /home/michal/CLionProjects/langGame/Scorer.h
+
+/home/michal/CLionProjects/langGame/main.cpp
+Game.h
+/home/michal/CLionProjects/langGame/Game.h
 

@@ -43,8 +43,7 @@ public:
 
     int random;
 
-    bool preparedRoundOne;
-    bool preparedRoundTwo;
+    bool preparedRoundOneAndTwo;
     bool preparedRoundThree;
     bool preparedRoundFour;
     bool preparedRoundFive;
