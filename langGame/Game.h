@@ -43,6 +43,12 @@ public:
 
     int random;
 
+    bool preparedRoundOne;
+    bool preparedRoundTwo;
+    bool preparedRoundThree;
+    bool preparedRoundFour;
+    bool preparedRoundFive;
+
     void readRules();
     void prepareRoundOneAndTwo();
     void prepareRoundThree();

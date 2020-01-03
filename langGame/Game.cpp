@@ -77,6 +77,10 @@ void Game::prepareRoundFive() {
 }
 
 void Game::roundOne() {
+
+    if (!preparedRoundOne) {
+        prepareRoundOneAndTwo();
+    }
     srand(time(0));
     random = (rand() % 40) + 1;
     word = myArrayRoundOneAndTwo[random];
@@ -120,6 +124,9 @@ void Game::roundTwo() {
 }
 
 void Game::roundThree() {
+    if (!preparedRoundThree) {
+        prepareRoundThree();
+    }
     srand(time(0));
     random = rand() % thirdRoundSentences.size();
 
@@ -159,6 +166,9 @@ void Game::roundThree() {
 }
 
 void Game::roundFour() {
+    if (!preparedRoundFour) {
+        prepareRoundFour();
+    }
     srand(time(0));
     random = rand() % fourthRoundSentences.size();
 
@@ -190,6 +200,9 @@ void Game::roundFour() {
 }
 
 void Game::roundFive() {
+    if (!preparedRoundFive) {
+        prepareRoundFive();
+    }
     srand(time(0));
     random = (rand() % 40) + 1;
 
@@ -221,48 +234,33 @@ void Game::playGame() {
 
     Game::readRules();
 
-    Game::prepareRoundOneAndTwo();
-    while (scorer.getPoints() < 11 && scorer.getMinusPoints() < 11) {
-        if (scorer.getMinusPoints() == 10) {
-            cout << finishInformation << scorer.getPoints();
-            break;
-        }
-        Game::roundOne();
-    }
-    Game::prepareRoundOneAndTwo();
-    while (scorer.getPoints() < 21 && scorer.getMinusPoints() < 11) {
-        if (scorer.getMinusPoints() == 10) {
-            cout << finishInformation << scorer.getPoints();
-            break;
-        }
-        Game::roundTwo();
-    }
-    Game::prepareRoundThree();
-    while (scorer.getPoints() < 31 && scorer.getMinusPoints() < 11) {
-        if (scorer.getMinusPoints() == 10) {
-            cout << finishInformation << scorer.getPoints();
-            break;
-        }
-        Game::roundThree();
-    }
-    Game::prepareRoundFour();
-    while (scorer.getPoints() < 41 && scorer.getMinusPoints() < 11) {
-        if (scorer.getMinusPoints() == 10) {
-            cout << finishInformation << scorer.getPoints();
-            break;
-        }
-        Game::roundFour();
-    }
-    Game::prepareRoundFive();
-    while (scorer.getPoints() < 51 && scorer.getMinusPoints() < 11) {
-        if (scorer.getMinusPoints() == 10) {
-            cout << finishInformation << scorer.getPoints();
-            break;
-        }
+    while (true) {
+
         if (scorer.getPoints() == 50) {
-            cout << "Gratulacje, udalo Ci sie ukonczyc gre! ";
-            break;
+            cout << "Gratulacje, udalo Ci sie ukonczyc gre! " << endl;
+            return;
         }
-        Game::roundFive();
+        if (scorer.getMinusPoints() == 10) {
+            cout << finishInformation << scorer.getPoints();
+            return;
+        }
+        switch (scorer.getPoints() / 10) {
+
+            case 0:
+                roundOne();
+                break;
+            case 1:
+                roundTwo();
+                break;
+            case 2:
+                roundThree();
+                break;
+            case 3:
+                roundFour();
+                break;
+            case 4:
+                roundFive();
+                break;
+        }
     }
 }

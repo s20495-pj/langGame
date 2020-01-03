@@ -3,11 +3,11 @@ W tej grze uczymy sie slowek z jezyka angielskiego w formie gry.
 Gra sklada sie z 5 roznych rund z nastepującymi zasadami:
 
 Kazda prawidlowa odpowiedz jest punktowana.
-Gre konczymy w momencie gdy uzyskamy 60 punktow.
-Lub wpiszemy niepoprawnie 10 odpowiedzi w ciagu calej gry.
+Gre konczymy w momencie gdy uzyskamy 50 punktow
+lub wpiszemy niepoprawnie 10 odpowiedzi w ciagu calej gry.
 
 Pamietaj by nie uzywac polskich znakow.
-Pisz odpowiedzi z malych liter.
+Pisz odpowiedzi z malych liter chyba, ze wyraz znajduje sie na poczatku zdania.
 
 Runda 1:
 Przetlumacz wyraz na jezyk angielski.
@@ -15,8 +15,7 @@ Runda 2:
 Przetlumacz wyraz na jezyk polski.
 Runda 3:
 Uzupelnij zdania TYLKO JEDNYM brakujacym wyrazem w j.angielskim.
-Jezeli slowo wystepuje wiecej niz raz w danej sentencji, zakropkowane zostana wszystkie jego wystapienia.
-Wyraz wpisz tylko raz. Pamietaj by poczatek zdania zaczynac duza litera jesli zakropkowany zostal wyraz na pierwszej pozycji.
+Pamietaj by poczatek zdania zaczynac duza litera jesli zakropkowany zostal wyraz na pierwszej pozycji.
 Pojawiajace sie sentencje sa znanymi idiomami/powiedzeniami badz przyslowiami.
 Runda 4:
 Wybierz wlasciwy zaimek, wpisz go by utrwalic wiedze.
