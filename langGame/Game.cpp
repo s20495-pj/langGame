@@ -17,7 +17,7 @@ string finishInformation = "\n Game over. Try again later. Your final score is :
 
 void Game::readRules() {
 
-    ifstream fileRules("/home/michal/CLionProjects/langGame/rules.txt");
+    ifstream fileRules("../../langGame/rules.txt");
 
     while (!fileRules.eof()) { // To get you all the lines.
         getline(fileRules, rules);
@@ -29,7 +29,7 @@ void Game::readRules() {
 
 void Game::prepareRoundOneAndTwo() {
 
-    ifstream fileRoundOneAndTwo("/home/michal/CLionProjects/langGame/roundOneAndTwo.txt");
+    ifstream fileRoundOneAndTwo("../../langGame/roundOneAndTwo.txt");
     if (fileRoundOneAndTwo.is_open()) {
 
         for (int i = 0; i < 40; ++i) {
@@ -41,7 +41,7 @@ void Game::prepareRoundOneAndTwo() {
 
 void Game::prepareRoundThree() {
 
-    ifstream fileRoundThree("/home/michal/CLionProjects/langGame/roundThree.txt");
+    ifstream fileRoundThree("../../langGame/roundThree.txt");
 
     while (getline(fileRoundThree, line)) {
         thirdRoundSentences.push_back(line);
@@ -51,7 +51,7 @@ void Game::prepareRoundThree() {
 
 void Game::prepareRoundFour() {
 
-    ifstream fileRoundFour("/home/michal/CLionProjects/langGame/roundFour.txt");
+    ifstream fileRoundFour("../../langGame/roundFour.txt");
 
     while (!fileRoundFour.eof()) {
         for (int i = 0; i < 30; ++i) {
@@ -67,7 +67,7 @@ void Game::prepareRoundFour() {
 
 void Game::prepareRoundFive() {
 
-    ifstream fileRoundFive("/home/michal/CLionProjects/langGame/roundFive.txt");
+    ifstream fileRoundFive("../../langGame/roundFive.txt");
     if (fileRoundFive.is_open()) {
 
         for (int i = 0; i < 40; ++i) {
