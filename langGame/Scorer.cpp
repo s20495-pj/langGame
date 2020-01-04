@@ -7,13 +7,13 @@ using namespace std;
 
 int Scorer::addPoints() {
     points++;
-    cout <<"\n Dobrze! \n Twoja liczba punktow to: " << getPoints()<< "\n";
+    cout <<"\n Good Answer! \n Your number of points: " << getPoints()<< "\n";
     return points;
 }
 
 int Scorer::oddPoints() {
     minusPoints++;
-    cout << "\n Zle! \n Twoja liczba nieudanych prob to: " << getMinusPoints()<< "\n";
+    cout << "\n Wrong! \n Your number of failed attempts is: " << getMinusPoints()<< "\n";
     return minusPoints;
 }
 
@@ -25,14 +25,6 @@ int Scorer::getPoints() {
 
 int Scorer::getMinusPoints() {
     return minusPoints;
-}
-
-void Scorer::setPoints(int points) {
-    Scorer::points = points;
-}
-
-void Scorer::setMinusPoints(int minusPoints) {
-    Scorer::minusPoints = minusPoints;
 }
 
 
