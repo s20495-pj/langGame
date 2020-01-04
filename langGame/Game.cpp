@@ -17,7 +17,7 @@ string finishInformation = "\n Game over. Try again later. Your final score is :
 
 void Game::readRules() {
 
-    ifstream fileRules("../../langGame/langGame/rules.txt");
+    ifstream fileRules("../../langGame/rules.txt");
 
     while (!fileRules.eof()) { // To get you all the lines.
         getline(fileRules, rules);
@@ -29,7 +29,7 @@ void Game::readRules() {
 
 void Game::prepareRoundOneAndTwo() {
 
-    ifstream fileRoundOneAndTwo("../../langGame/langGame/roundOneAndTwo.txt");
+    ifstream fileRoundOneAndTwo("../../langGame/roundOneAndTwo.txt");
     if (fileRoundOneAndTwo.is_open()) {
 
         for (int i = 0; i < 40; ++i) {
@@ -41,7 +41,7 @@ void Game::prepareRoundOneAndTwo() {
 
 void Game::prepareRoundThree() {
 
-    ifstream fileRoundThree("../../langGame/langGame/roundThree.txt");
+    ifstream fileRoundThree("../../langGame/roundThree.txt");
 
     while (getline(fileRoundThree, line)) {
         thirdRoundSentences.push_back(line);
@@ -51,7 +51,7 @@ void Game::prepareRoundThree() {
 
 void Game::prepareRoundFour() {
 
-    ifstream fileRoundFour("../../langGame/langGame/roundFour.txt");
+    ifstream fileRoundFour("../../angGame/roundFour.txt");
 
     while (!fileRoundFour.eof()) {
         for (int i = 0; i < 30; ++i) {
@@ -90,7 +90,7 @@ void Game::roundOne() {
     if (random % 2 == 1) {
         random++;
     } else if (random % 2 == 0) {
-        cout << "\n Write translation of word below:  " << '\n' << word<< "\n";
+        cout << "\n Write translation of word below:  " << '\n' << word << "\n";
 
         cin >> typeWord;
         if (typeWord == translationWord) {
@@ -142,6 +142,7 @@ void Game::roundThree() {
         wholeSentenceLine.erase(0, pos + delimiter.length());  //erase word one by one from whole sentence
         arrayWithOneLineStrings.push_back(token); //add to vector
     }
+    wholeSentenceLine.pop_back(); //removing default \r from end of last word
     arrayWithOneLineStrings.push_back(wholeSentenceLine); //add last left word to vector
 
     srand(time(0));
@@ -150,10 +151,10 @@ void Game::roundThree() {
     token = arrayWithOneLineStrings[random];
 
     if (chosenLine.find(token) != string::npos) {
-        chosenLine.replace(chosenLine.find(token), token.size(), "....");
+        chosenLine.replace(chosenLine.find(token), token.size(), "...");
     }
 
-    cout << "\n" << chosenLine<< "\n";
+    cout << "\n" << chosenLine << "\n";
     cin >> typeWord;
     arrayWithOneLineStrings.clear(); //clear array after answer, avoid adding more than one sentence to vector
 
@@ -161,7 +162,7 @@ void Game::roundThree() {
         scorer.addPoints();
     } else {
         scorer.oddPoints();
-        cout << "\n Right answer is  : " << token<< "\n";
+        cout << "\n Right answer is  : " << token << "\n";
     }
 }
 
@@ -195,7 +196,7 @@ void Game::roundFour() {
         scorer.addPoints();
     } else {
         scorer.oddPoints();
-        cout << "\n Right answer is  : " << answerOne<< "\n";
+        cout << "\n Right answer is  : " << answerOne << "\n";
     }
 }
 
@@ -246,13 +247,13 @@ void Game::playGame() {
         }
         switch (scorer.getPoints() / 10) {
 
+//            case 0:
+//                roundOne();
+//                break;
+//            case 1:
+//                roundTwo();
+//                break;
             case 0:
-                roundOne();
-                break;
-            case 1:
-                roundTwo();
-                break;
-            case 2:
                 roundThree();
                 break;
             case 3:
